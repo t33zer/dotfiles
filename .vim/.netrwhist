@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/t33/Downloads'
+let g:netrw_dirhist_2='/media/automount/STudy/c_2nd'
+let g:netrw_dirhist_3='/etc/nginx'
+let g:netrw_dirhist_4='/usr/local/etc'
+let g:netrw_dirhist_5='/etc/php/7.2'
+let g:netrw_dirhist_6='/etc/php/7.2/mods-available'
+let g:netrw_dirhist_7='/etc/nginx/sites-available'
