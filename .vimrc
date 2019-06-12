@@ -44,4 +44,7 @@ set shiftwidth=4
 "set expandtab
 " actions save even when vim reopens
 set undofile
-
+" fixing modeline
+set secure
+set modelines=0
+set nomodeline
