@@ -100,3 +100,20 @@ alias ll="ls -lah"
 
 alias vpnka="sudo openvpn --config ~/vpn.ovpn 2>&1 1>~/ovpn.log"
 alias lh="ls -lh"
+
+
+function mv-num() {
+	increm=0
+	f0ld=$1
+	if [ -z "$f0ld" ]
+	then
+		echo "Usage: $0 PATH"
+		return 0
+	fi
+	for file in `ls $f0ld` 
+	do
+		num=$(printf "%02d" "$increm")
+		mv $f0ld/$file $f0ld/$num-$file
+		increm=$((increm+1))
+	done
+}
