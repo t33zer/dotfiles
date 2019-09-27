@@ -62,7 +62,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=(docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,10 +96,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias temp="sensors"
 export PATH=$PATH:/usr/local/go/bin
-alias ll="ls -lah"
-
-alias vpnka="sudo openvpn --config ~/vpn.ovpn 2>&1 1>~/ovpn.log"
-alias lh="ls -lh"
 
 
 function mv-num() {
@@ -117,3 +113,6 @@ function mv-num() {
 		increm=$((increm+1))
 	done
 }
+export PATH=$PATH:/opt/goland2019/bin
+export GOPATH=/home/t33/projects:/home/t33/go
+source ~/.aliases

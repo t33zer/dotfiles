@@ -1,0 +1,16 @@
+alias doexec="docker exec -ti $1 bash"
+alias dockps="docker ps -a"
+alias dockconls="docker container ls -a"
+alias dcomp="docker-compose up"
+dockexec()
+{
+	docker exec -ti "$1" bash
+}
+
+
+alias temp="sensors"
+alias ll="ls -lah"
+
+alias vpnka="sudo openvpn --config ~/vpn.ovpn 2>&1 1>~/ovpn.log"
+alias lh="ls -lh"
+alias keydis='xinput disable "AT Translated Set 2 keyboard"'
