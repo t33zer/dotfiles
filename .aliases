@@ -14,3 +14,6 @@ alias ll="ls -lah"
 alias vpnka="sudo openvpn --config ~/vpn.ovpn 2>&1 1>~/ovpn.log"
 alias lh="ls -lh"
 alias keydis='xinput disable "AT Translated Set 2 keyboard"'
+alias git_init="git init; echo '.*' > .gitignore"
+
+
