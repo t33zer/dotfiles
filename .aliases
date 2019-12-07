@@ -2,7 +2,7 @@ alias doexec="docker exec -ti $1 bash"
 alias dockps="docker ps -a"
 alias dockconls="docker container ls -a"
 alias dcomp="docker-compose up"
-dockexec()
+doexec()
 {
 	docker exec -ti "$1" bash
 }

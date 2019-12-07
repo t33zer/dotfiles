@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/t33/.oh-my-zsh"
+  export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -62,7 +62,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker docker-compose)
+plugins=(docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,3 +116,4 @@ function mv-num() {
 export PATH=$PATH:/opt/goland2019/bin
 export GOPATH=/home/t33/projects:/home/t33/go
 source ~/.aliases
+# compinit
