@@ -117,3 +117,5 @@ export PATH=$PATH:/opt/goland2019/bin
 export GOPATH=/home/t33/projects:/home/t33/go
 source ~/.aliases
 # compinit
+# VUNDLE install
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
