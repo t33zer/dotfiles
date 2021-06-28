@@ -52,7 +52,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias temp="sensors"
-export PATH=$PATH:/usr/local/go/bin
 
 
 function mv-num() {
@@ -88,10 +87,14 @@ function mv-num-only() {
 		increm=$((increm+1))
 	done
 }
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export PATH=$PATH:/opt/goland2019/bin
 export PATH=$PATH:$HOME/.deno/bin
-export PATH=/usr/local/lib/nodejs/node-v12.18.2-linux-x64/bin:$PATH
 export PATH=/opt/amazon-corretto-11.0.9.12.1-linux-x64/bin:$PATH
+export PATH=$PATH:/media/t33/Seagate\ Expansion\ Drive/genymotion
+export PATH=$PATH:/opt/idea-IU-211.6693.111/bin
+export PATH=$PATH:/opt/node-v14.16.1-linux-x64/bin
+export PATH=$PATH:~/.local/bin
 source ~/.aliases
 # compinit
 #
@@ -106,6 +109,8 @@ source ~/.aliases
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ -e ~/.vim/bundle/Vundle.vim/ ]] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-[[ -e ~/github/tmux-power/ ]] || git clone https://github.com/wfxr/tmux-power ~/github/
+#[[ -e ~/github/tmux-power/ ]] || git clone https://github.com/wfxr/tmux-power ~/github/
 #to fix insecure autocomplete dirs:
 # compaudit | xargs chmod go-w
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
