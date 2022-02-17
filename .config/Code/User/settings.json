@@ -1,0 +1,20 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block-outline",
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#ffff00",
+        "editor.selectionHighlightBorder": "#99cc00",
+
+        "editor.findMatchBackground": "#ffff00", 
+		"terminalCursor.foreground": "#000066"
+    },
+    "editor.tabSize": "2",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "vim.useSystemClipboard": true
+}
