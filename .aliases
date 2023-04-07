@@ -1,4 +1,3 @@
-alias doexec="docker exec -ti $1 bash"
 alias dockps="docker ps -a"
 alias dockconls="docker container ls -a"
 alias dcomp="docker-compose up"
@@ -7,6 +6,16 @@ doexec()
 	docker exec -ti "$1" bash
 }
 
+
+cme()
+{
+    cd /home/z37yc/github/tools/CrackMapExec/; echo "$@"; poetry run crackmapexec "$@"; cd -
+}
+
+ipaddr()
+{
+    ifconfig "$1"  | grep -oP '(?<=inet )\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3}'
+}
 
 alias temp="sensors"
 alias ll="ls -lah"
@@ -17,3 +26,15 @@ alias keydis='xinput disable "AT Translated Set 2 keyboard"'
 alias git_init="git init; echo '.*' > .gitignore"
 
 
+alias tmux-curr-dir='tmux command-prompt -I $PWD "attach -c %1"'
+
+# JetBrains
+
+alias goland="/opt/GoLand-2021.3.2/bin/goland.sh"
+alias webstorm="/opt/WebStorm-213.6461.79/bin/webstorm.sh"
+alias pycharm="/opt/pycharm-2021.3.1/bin/pycharm.sh"
+#alias pch="proxychains4 -f /home/z37yc/standoff/offices/hws/proxychains/proxychains.conf -q"
+alias pch="proxychains4 -f /home/z37yc/htb/HTB_RastaLabs//proxychains/proxychains.conf -q"
+#alias pch="proxychains4 -q"
+alias hinkali="ssh poheker@192.168.3.35"
+alias c_hinkali="scp poheker@192.168.3.35"
